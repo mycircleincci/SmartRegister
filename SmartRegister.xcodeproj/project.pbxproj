@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F8AB183179556E100AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
+		4F8AB185179556E100AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
+		4F8AB187179556E100AC5906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB186179556E100AC5906 /* CoreGraphics.framework */; };
+		4F8AB1A7179556E200AC5906 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB1A6179556E200AC5906 /* SenTestingKit.framework */; };
+		4F8AB1A8179556E200AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
+		4F8AB1A9179556E200AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
+		4F8AB1B1179556E200AC5906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1AF179556E200AC5906 /* InfoPlist.strings */; };
+		4F8AB1B4179556E200AC5906 /* SmartRegisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */; };
+		4F8AB1C4179557DF00AC5906 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */; };
+		4F8AB1C5179557DF00AC5906 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C3179557DF00AC5906 /* MCViewController.m */; };
+		4F8AB1CC1795582500AC5906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C71795582500AC5906 /* InfoPlist.strings */; };
+		4F8AB1CD1795582500AC5906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C91795582500AC5906 /* main.m */; };
+		4F8AB1D71795584300AC5906 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1D21795584300AC5906 /* MainStoryboard.storyboard */; };
+		4F8AB1D81795584300AC5906 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1D41795584300AC5906 /* Default-568h@2x.png */; };
+		4F8AB1D91795584300AC5906 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1D51795584300AC5906 /* Default.png */; };
+		4F8AB1DA1795584300AC5906 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1D61795584300AC5906 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F8AB1AA179556E200AC5906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8AB177179556E100AC5906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8AB17E179556E100AC5906;
+			remoteInfo = SmartRegister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F8AB17F179556E100AC5906 /* SmartRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8AB182179556E100AC5906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4F8AB184179556E100AC5906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F8AB186179556E100AC5906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4F8AB1A5179556E200AC5906 /* SmartRegisterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartRegisterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8AB1A6179556E200AC5906 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4F8AB1AE179556E200AC5906 /* SmartRegisterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartRegisterTests-Info.plist"; sourceTree = "<group>"; };
+		4F8AB1B0179556E200AC5906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F8AB1B2179556E200AC5906 /* SmartRegisterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartRegisterTests.h; sourceTree = "<group>"; };
+		4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartRegisterTests.m; sourceTree = "<group>"; };
+		4F8AB1C0179557DF00AC5906 /* MCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		4F8AB1C2179557DF00AC5906 /* MCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		4F8AB1C3179557DF00AC5906 /* MCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		4F8AB1C81795582500AC5906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		4F8AB1C91795582500AC5906 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SupportingFiles/main.m; sourceTree = "<group>"; };
+		4F8AB1CA1795582500AC5906 /* SmartRegister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SmartRegister-Info.plist"; path = "SupportingFiles/SmartRegister-Info.plist"; sourceTree = "<group>"; };
+		4F8AB1CB1795582500AC5906 /* SmartRegister-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SmartRegister-Prefix.pch"; path = "SupportingFiles/SmartRegister-Prefix.pch"; sourceTree = "<group>"; };
+		4F8AB1D21795584300AC5906 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4F8AB1D41795584300AC5906 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4F8AB1D51795584300AC5906 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4F8AB1D61795584300AC5906 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F8AB17C179556E100AC5906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB183179556E100AC5906 /* UIKit.framework in Frameworks */,
+				4F8AB185179556E100AC5906 /* Foundation.framework in Frameworks */,
+				4F8AB187179556E100AC5906 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8AB1A1179556E200AC5906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB1A7179556E200AC5906 /* SenTestingKit.framework in Frameworks */,
+				4F8AB1A8179556E200AC5906 /* UIKit.framework in Frameworks */,
+				4F8AB1A9179556E200AC5906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F8AB176179556E100AC5906 = {
+			isa = PBXGroup;
+			children = (
+				4F8AB188179556E100AC5906 /* SmartRegister */,
+				4F8AB1AC179556E200AC5906 /* SmartRegisterTests */,
+				4F8AB181179556E100AC5906 /* Frameworks */,
+				4F8AB180179556E100AC5906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F8AB180179556E100AC5906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB17F179556E100AC5906 /* SmartRegister.app */,
+				4F8AB1A5179556E200AC5906 /* SmartRegisterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F8AB181179556E100AC5906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB182179556E100AC5906 /* UIKit.framework */,
+				4F8AB184179556E100AC5906 /* Foundation.framework */,
+				4F8AB186179556E100AC5906 /* CoreGraphics.framework */,
+				4F8AB1A6179556E200AC5906 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F8AB188179556E100AC5906 /* SmartRegister */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1BF179557DF00AC5906 /* Classes */,
+				4F8AB1CF1795584300AC5906 /* UI */,
+				4F8AB189179556E100AC5906 /* Supporting Files */,
+			);
+			path = SmartRegister;
+			sourceTree = "<group>";
+		};
+		4F8AB189179556E100AC5906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1C61795582500AC5906 /* en.lproj */,
+				4F8AB1C91795582500AC5906 /* main.m */,
+				4F8AB1CA1795582500AC5906 /* SmartRegister-Info.plist */,
+				4F8AB1CB1795582500AC5906 /* SmartRegister-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F8AB1AC179556E200AC5906 /* SmartRegisterTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1B2179556E200AC5906 /* SmartRegisterTests.h */,
+				4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */,
+				4F8AB1AD179556E200AC5906 /* Supporting Files */,
+			);
+			path = SmartRegisterTests;
+			sourceTree = "<group>";
+		};
+		4F8AB1AD179556E200AC5906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1AE179556E200AC5906 /* SmartRegisterTests-Info.plist */,
+				4F8AB1AF179556E200AC5906 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F8AB1BF179557DF00AC5906 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1C0179557DF00AC5906 /* MCAppDelegate.h */,
+				4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */,
+				4F8AB1C2179557DF00AC5906 /* MCViewController.h */,
+				4F8AB1C3179557DF00AC5906 /* MCViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4F8AB1C61795582500AC5906 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1C71795582500AC5906 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = SupportingFiles/en.lproj;
+			sourceTree = "<group>";
+		};
+		4F8AB1CF1795584300AC5906 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1D01795584300AC5906 /* Images */,
+				4F8AB1D11795584300AC5906 /* Interface */,
+				4F8AB1D31795584300AC5906 /* LaunchImages */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4F8AB1D01795584300AC5906 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4F8AB1D11795584300AC5906 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1D21795584300AC5906 /* MainStoryboard.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		4F8AB1D31795584300AC5906 /* LaunchImages */ = {
+			isa = PBXGroup;
+			children = (
+				4F8AB1D41795584300AC5906 /* Default-568h@2x.png */,
+				4F8AB1D51795584300AC5906 /* Default.png */,
+				4F8AB1D61795584300AC5906 /* Default@2x.png */,
+			);
+			path = LaunchImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F8AB17E179556E100AC5906 /* SmartRegister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8AB1B7179556E200AC5906 /* Build configuration list for PBXNativeTarget "SmartRegister" */;
+			buildPhases = (
+				4F8AB17B179556E100AC5906 /* Sources */,
+				4F8AB17C179556E100AC5906 /* Frameworks */,
+				4F8AB17D179556E100AC5906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartRegister;
+			productName = SmartRegister;
+			productReference = 4F8AB17F179556E100AC5906 /* SmartRegister.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F8AB1A4179556E200AC5906 /* SmartRegisterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8AB1BA179556E200AC5906 /* Build configuration list for PBXNativeTarget "SmartRegisterTests" */;
+			buildPhases = (
+				4F8AB1A0179556E200AC5906 /* Sources */,
+				4F8AB1A1179556E200AC5906 /* Frameworks */,
+				4F8AB1A2179556E200AC5906 /* Resources */,
+				4F8AB1A3179556E200AC5906 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8AB1AB179556E200AC5906 /* PBXTargetDependency */,
+			);
+			name = SmartRegisterTests;
+			productName = SmartRegisterTests;
+			productReference = 4F8AB1A5179556E200AC5906 /* SmartRegisterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F8AB177179556E100AC5906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MyCircleInc;
+			};
+			buildConfigurationList = 4F8AB17A179556E100AC5906 /* Build configuration list for PBXProject "SmartRegister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F8AB176179556E100AC5906;
+			productRefGroup = 4F8AB180179556E100AC5906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F8AB17E179556E100AC5906 /* SmartRegister */,
+				4F8AB1A4179556E200AC5906 /* SmartRegisterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F8AB17D179556E100AC5906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB1CC1795582500AC5906 /* InfoPlist.strings in Resources */,
+				4F8AB1D71795584300AC5906 /* MainStoryboard.storyboard in Resources */,
+				4F8AB1D81795584300AC5906 /* Default-568h@2x.png in Resources */,
+				4F8AB1D91795584300AC5906 /* Default.png in Resources */,
+				4F8AB1DA1795584300AC5906 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8AB1A2179556E200AC5906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB1B1179556E200AC5906 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F8AB1A3179556E200AC5906 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F8AB17B179556E100AC5906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB1C4179557DF00AC5906 /* MCAppDelegate.m in Sources */,
+				4F8AB1C5179557DF00AC5906 /* MCViewController.m in Sources */,
+				4F8AB1CD1795582500AC5906 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8AB1A0179556E200AC5906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8AB1B4179556E200AC5906 /* SmartRegisterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8AB1AB179556E200AC5906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8AB17E179556E100AC5906 /* SmartRegister */;
+			targetProxy = 4F8AB1AA179556E200AC5906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F8AB1AF179556E200AC5906 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F8AB1B0179556E200AC5906 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F8AB1C71795582500AC5906 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F8AB1C81795582500AC5906 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F8AB1B5179556E200AC5906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4F8AB1B6179556E200AC5906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F8AB1B8179556E200AC5906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartRegister/SupportingFiles/SmartRegister-Prefix.pch";
+				INFOPLIST_FILE = "SmartRegister/SupportingFiles/SmartRegister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F8AB1B9179556E200AC5906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartRegister/SupportingFiles/SmartRegister-Prefix.pch";
+				INFOPLIST_FILE = "SmartRegister/SupportingFiles/SmartRegister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4F8AB1BB179556E200AC5906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartRegister.app/SmartRegister";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartRegister/SmartRegister-Prefix.pch";
+				INFOPLIST_FILE = "SmartRegisterTests/SmartRegisterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4F8AB1BC179556E200AC5906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartRegister.app/SmartRegister";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartRegister/SmartRegister-Prefix.pch";
+				INFOPLIST_FILE = "SmartRegisterTests/SmartRegisterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F8AB17A179556E100AC5906 /* Build configuration list for PBXProject "SmartRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8AB1B5179556E200AC5906 /* Debug */,
+				4F8AB1B6179556E200AC5906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8AB1B7179556E200AC5906 /* Build configuration list for PBXNativeTarget "SmartRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8AB1B8179556E200AC5906 /* Debug */,
+				4F8AB1B9179556E200AC5906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F8AB1BA179556E200AC5906 /* Build configuration list for PBXNativeTarget "SmartRegisterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8AB1BB179556E200AC5906 /* Debug */,
+				4F8AB1BC179556E200AC5906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F8AB177179556E100AC5906 /* Project object */;
+}
