@@ -14,21 +14,22 @@
 
     [item setBasket:self];
     [[self items] addObject:item];
-    [_delegate basketDidUpdate];
+    [_delegate basketDidAddItem];
 }
 
 - (void)removeItem:(id)item
 {
     [self handleItemExceptions:item];
     
+    NSInteger rowToRemove = [_items indexOfObject:item];
     [[self items] removeObject:item];
-    [_delegate basketDidUpdate];
+    [_delegate basketDidRemoveItemAtRow:rowToRemove];
 }
 
 - (void)clearItems
 {
     _items = nil;
-    [_delegate basketDidUpdate];
+    [_delegate basketDidClear];
 }
 
 - (id)itemAtRow:(NSUInteger)row

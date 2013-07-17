@@ -6,7 +6,9 @@
 @protocol MCBasketDelegate <NSObject>
 
 @optional
-- (void)basketDidUpdate;
+- (void)basketDidAddItem;
+- (void)basketDidRemoveItemAtRow:(NSInteger)row;
+- (void)basketDidClear;
 
 @end
 

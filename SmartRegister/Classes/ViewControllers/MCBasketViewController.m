@@ -17,13 +17,34 @@
     _basket = [[MCBasket alloc] init];
     [_basket setDelegate:self];
     [self.tableview setDataSource:_basket];
-    //[self.tableview setDelegate:self];
 }
 
-- (void)basketDidUpdate
+- (void)basketDidAddItem
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[_basket numberOfItems]-1 inSection:0];
+    [_tableview insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [self updateTotalLabel];
+}
+
+- (void)basketDidRemoveItemAtRow:(NSInteger)row
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+    [_tableview deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [self updateTotalLabel];  
+}
+
+- (void)basketDidClear
 {
     [_tableview reloadData];
-    
+}
+
+- (IBAction)clearButtonTapped:(id)sender
+{
+    [_basket clearItems];
+}
+
+- (void)updateTotalLabel
+{
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     [formatter setCurrencySymbol:@"£"];
@@ -76,11 +97,6 @@
     }
     
     [_basket addItem:item];
-}
-
-- (IBAction)clearButtonTapped:(id)sender
-{
-    [_basket clearItems];
 }
 
 @end

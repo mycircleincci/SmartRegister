@@ -157,18 +157,21 @@
     MCBasketItem *item = [[MCBasketItem alloc] init];
     [_sut addItem:item];
     
-    [verify(mockDelegate) basketDidUpdate];
+    [verify(mockDelegate) basketDidAddItem];
 }
 
-- (void)testBasketInformsDelegateWhenItemRemoved
+- (void)testBasketInformsDelegateWithRowWhenItemRemoved
 {
     id <MCBasketDelegate> mockDelegate = mockProtocol(@protocol(MCBasketDelegate));
     [_sut setDelegate:mockDelegate];
     
-    MCBasketItem *item = [[MCBasketItem alloc] init];
-    [_sut removeItem:item];
+    MCBasketItem *firstItem = [[MCBasketItem alloc] init];
+    [_sut addItem:firstItem];
+    MCBasketItem *secondItem = [[MCBasketItem alloc] init];
+    [_sut addItem:secondItem];
+    [_sut removeItem:firstItem];
     
-    [verify(mockDelegate) basketDidUpdate];
+    [verify(mockDelegate) basketDidRemoveItemAtRow:0];
 }
 
 - (void)testClearingBasketRemovesAllItems
@@ -185,7 +188,7 @@
     
     [_sut clearItems];
     
-    [verify(mockDelegate) basketDidUpdate];
+    [verify(mockDelegate) basketDidClear];
 }
 
 
