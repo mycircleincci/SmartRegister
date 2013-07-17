@@ -121,7 +121,7 @@
     [basketItem setPrice:500];
     [_sut addItem:basketItem];
     
-    assertThatInteger([_sut totalPrice], is(equalToInteger(400)));
+    assertThatInteger([_sut totalPrice], is(equalToInteger(500)));
 }
 
 - (void)testCellProvidedWithItemWhenCreated
