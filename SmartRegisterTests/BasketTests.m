@@ -1,6 +1,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "MCBasket.h"
+#import "MCBasketItem.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
@@ -20,6 +21,12 @@
 {
     [super setUp];
     _sut = [[MCBasket alloc] init];
+}
+
+- (void)tearDown
+{
+    _sut = nil;
+    [super tearDown];
 }
 
 - (void)testBasketExists
@@ -85,9 +92,30 @@
     assertThatInteger(tableViewNumberOfRows, is(equalToInteger(1)));
 }
 
-- (void)testBasketReturnsItem
+- (void)testBasketReturnsCorrectItem
 {
-    id item
+    id firstItem = [NSObject new];
+    [_sut addItem:firstItem];
+    id secondItem = [NSObject new];
+    [_sut addItem:secondItem];
+    
+    id returnedItem = [_sut itemAtRow:1];
+    
+    assertThat(returnedItem, is(equalTo(secondItem)));
+}
+
+- (void)testBasketTotalPriceIsZero
+{
+    assertThatInteger([_sut totalPrice], is(equalToInteger(0)));
+}
+
+- (void)testBasketTotalPriceIsEqualToItemTotalPrice
+{
+    MCBasketItem *basketItem = [[MCBasketItem alloc] init];
+    [basketItem setPrice:500];
+    [_sut addItem:basketItem];
+    
+    assertThatInteger([_sut totalPrice], is(equalToInteger(500)));
 }
 
 @end

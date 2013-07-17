@@ -1,5 +1,6 @@
 
 #import "MCBasket.h"
+#import "MCBasketItem.h"
 
 @implementation MCBasket
 {
@@ -20,9 +21,24 @@
     [[self items] removeObject:item];
 }
 
+- (id)itemAtRow:(NSUInteger)row
+{
+    return [[self items] objectAtIndex:row];
+}
+
 - (NSInteger)numberOfItems
 {
     return [[self items] count];
+}
+
+- (NSInteger)totalPrice
+{
+    NSInteger total = 0;
+    for (MCBasketItem *eachItem in [self items])
+    {
+        total += eachItem.price;
+    }
+    return total;
 }
 
 #pragma mark - TableView Datasource
