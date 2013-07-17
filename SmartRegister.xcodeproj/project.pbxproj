@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F30DDE81796A1D300C3F9D6 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F30DDE61796A1D300C3F9D6 /* OCHamcrestIOS.framework */; };
+		4F30DDE91796A1D300C3F9D6 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F30DDE71796A1D300C3F9D6 /* OCMockitoIOS.framework */; };
 		4F8AB183179556E100AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
 		4F8AB185179556E100AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
 		4F8AB187179556E100AC5906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB186179556E100AC5906 /* CoreGraphics.framework */; };
@@ -14,7 +16,6 @@
 		4F8AB1A8179556E200AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
 		4F8AB1A9179556E200AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
 		4F8AB1B1179556E200AC5906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1AF179556E200AC5906 /* InfoPlist.strings */; };
-		4F8AB1B4179556E200AC5906 /* SmartRegisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */; };
 		4F8AB1C4179557DF00AC5906 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */; };
 		4F8AB1C5179557DF00AC5906 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C3179557DF00AC5906 /* MCViewController.m */; };
 		4F8AB1CC1795582500AC5906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F8AB1C71795582500AC5906 /* InfoPlist.strings */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F30DDE61796A1D300C3F9D6 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = SmartRegisterTests/vendor/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		4F30DDE71796A1D300C3F9D6 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = SmartRegisterTests/vendor/OCMockitoIOS.framework; sourceTree = "<group>"; };
 		4F8AB17F179556E100AC5906 /* SmartRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8AB182179556E100AC5906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4F8AB184179556E100AC5906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,8 +47,6 @@
 		4F8AB1A6179556E200AC5906 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4F8AB1AE179556E200AC5906 /* SmartRegisterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartRegisterTests-Info.plist"; sourceTree = "<group>"; };
 		4F8AB1B0179556E200AC5906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4F8AB1B2179556E200AC5906 /* SmartRegisterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartRegisterTests.h; sourceTree = "<group>"; };
-		4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartRegisterTests.m; sourceTree = "<group>"; };
 		4F8AB1C0179557DF00AC5906 /* MCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
 		4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
 		4F8AB1C2179557DF00AC5906 /* MCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 				4F8AB1A7179556E200AC5906 /* SenTestingKit.framework in Frameworks */,
 				4F8AB1A8179556E200AC5906 /* UIKit.framework in Frameworks */,
 				4F8AB1A9179556E200AC5906 /* Foundation.framework in Frameworks */,
+				4F30DDE81796A1D300C3F9D6 /* OCHamcrestIOS.framework in Frameworks */,
+				4F30DDE91796A1D300C3F9D6 /* OCMockitoIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,8 @@
 		4F8AB181179556E100AC5906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F30DDE61796A1D300C3F9D6 /* OCHamcrestIOS.framework */,
+				4F30DDE71796A1D300C3F9D6 /* OCMockitoIOS.framework */,
 				4F8AB182179556E100AC5906 /* UIKit.framework */,
 				4F8AB184179556E100AC5906 /* Foundation.framework */,
 				4F8AB186179556E100AC5906 /* CoreGraphics.framework */,
@@ -138,8 +143,6 @@
 		4F8AB1AC179556E200AC5906 /* SmartRegisterTests */ = {
 			isa = PBXGroup;
 			children = (
-				4F8AB1B2179556E200AC5906 /* SmartRegisterTests.h */,
-				4F8AB1B3179556E200AC5906 /* SmartRegisterTests.m */,
 				4F8AB1AD179556E200AC5906 /* Supporting Files */,
 			);
 			path = SmartRegisterTests;
@@ -330,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8AB1B4179556E200AC5906 /* SmartRegisterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,9 +453,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/SmartRegisterTests/vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SmartRegister/SmartRegister-Prefix.pch";
+				GCC_PREFIX_HEADER = "SmartRegister/SupportingFiles/SmartRegister-Prefix.pch";
 				INFOPLIST_FILE = "SmartRegisterTests/SmartRegisterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -468,9 +471,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/SmartRegisterTests/vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SmartRegister/SmartRegister-Prefix.pch";
+				GCC_PREFIX_HEADER = "SmartRegister/SupportingFiles/SmartRegister-Prefix.pch";
 				INFOPLIST_FILE = "SmartRegisterTests/SmartRegisterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -497,6 +501,7 @@
 				4F8AB1B9179556E200AC5906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F8AB1BA179556E200AC5906 /* Build configuration list for PBXNativeTarget "SmartRegisterTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +510,7 @@
 				4F8AB1BC179556E200AC5906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
