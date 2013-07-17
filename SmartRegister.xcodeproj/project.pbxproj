@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4F30DDE81796A1D300C3F9D6 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F30DDE61796A1D300C3F9D6 /* OCHamcrestIOS.framework */; };
 		4F30DDE91796A1D300C3F9D6 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F30DDE71796A1D300C3F9D6 /* OCMockitoIOS.framework */; };
+		4F30DDEB1796A22300C3F9D6 /* BasketTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDEA1796A22300C3F9D6 /* BasketTest.m */; };
+		4F30DDEF1796A4A300C3F9D6 /* MCBasket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDEE1796A4A300C3F9D6 /* MCBasket.m */; };
+		4F30DDF01796A4A300C3F9D6 /* MCBasket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDEE1796A4A300C3F9D6 /* MCBasket.m */; };
 		4F8AB183179556E100AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
 		4F8AB185179556E100AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
 		4F8AB187179556E100AC5906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB186179556E100AC5906 /* CoreGraphics.framework */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		4F30DDE61796A1D300C3F9D6 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = SmartRegisterTests/vendor/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		4F30DDE71796A1D300C3F9D6 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = SmartRegisterTests/vendor/OCMockitoIOS.framework; sourceTree = "<group>"; };
+		4F30DDEA1796A22300C3F9D6 /* BasketTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketTest.m; sourceTree = "<group>"; };
+		4F30DDED1796A4A300C3F9D6 /* MCBasket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCBasket.h; path = Model/MCBasket.h; sourceTree = "<group>"; };
+		4F30DDEE1796A4A300C3F9D6 /* MCBasket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCBasket.m; path = Model/MCBasket.m; sourceTree = "<group>"; };
 		4F8AB17F179556E100AC5906 /* SmartRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8AB182179556E100AC5906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4F8AB184179556E100AC5906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F30DDEC1796A43600C3F9D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F30DDED1796A4A300C3F9D6 /* MCBasket.h */,
+				4F30DDEE1796A4A300C3F9D6 /* MCBasket.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4F8AB176179556E100AC5906 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				4F8AB1AD179556E200AC5906 /* Supporting Files */,
+				4F30DDEA1796A22300C3F9D6 /* BasketTest.m */,
 			);
 			path = SmartRegisterTests;
 			sourceTree = "<group>";
@@ -160,6 +176,7 @@
 		4F8AB1BF179557DF00AC5906 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4F30DDEC1796A43600C3F9D6 /* Model */,
 				4F8AB1C0179557DF00AC5906 /* MCAppDelegate.h */,
 				4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */,
 				4F8AB1C2179557DF00AC5906 /* MCViewController.h */,
@@ -326,6 +343,7 @@
 				4F8AB1C4179557DF00AC5906 /* MCAppDelegate.m in Sources */,
 				4F8AB1C5179557DF00AC5906 /* MCViewController.m in Sources */,
 				4F8AB1CD1795582500AC5906 /* main.m in Sources */,
+				4F30DDEF1796A4A300C3F9D6 /* MCBasket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F30DDEB1796A22300C3F9D6 /* BasketTest.m in Sources */,
+				4F30DDF01796A4A300C3F9D6 /* MCBasket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
