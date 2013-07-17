@@ -4,6 +4,7 @@
 
 @interface MCBasketViewController : UIViewController <MCBasketDelegate>
 
+@property (strong) MCBasket *basket;
 @property (weak) IBOutlet UITableView *tableview;
 @property (weak) IBOutlet UILabel *totalLabel;
 

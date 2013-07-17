@@ -8,8 +8,9 @@
 
 @implementation MCBasketViewController
 {
-    MCBasket *_basket;
+    
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
