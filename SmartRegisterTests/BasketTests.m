@@ -47,7 +47,7 @@
 
 - (void)testNumberOfItemsIncreases
 {
-    id item = [NSObject new];
+    MCBasketItem *item = [[MCBasketItem alloc] init];
     [_sut addItem:item];
     
     assertThatInt([_sut numberOfItems], is(equalToInteger(1)));
@@ -60,7 +60,7 @@
 
 - (void)testNumberOfItemsDecreases
 {
-    id item = [NSObject new];
+    MCBasketItem *item = [[MCBasketItem alloc] init];
     [_sut addItem:item];
     [_sut removeItem:item];
     
@@ -69,7 +69,7 @@
 
 - (void)testRemoveItemFromEmptyBasketDoesNotThrow
 {
-    id item = [NSObject new];
+    MCBasketItem *item = [[MCBasketItem alloc] init];
     STAssertNoThrow([_sut removeItem:item], @"Removing item from empty basket should not throw");
 }
 
@@ -86,7 +86,7 @@
 
 - (void)testTableViewNumberOfRowsIsBasketNumberOfItemsWhenNotEmpty
 {
-    id item = [NSObject new];
+    MCBasketItem *item = [[MCBasketItem alloc] init];
     [_sut addItem:item];
     
     NSUInteger tableViewNumberOfRows = [_sut tableView:nil numberOfRowsInSection:0];
@@ -100,9 +100,9 @@
 
 - (void)testBasketReturnsCorrectItem
 {
-    id firstItem = [NSObject new];
+    MCBasketItem *firstItem = [[MCBasketItem alloc] init];
     [_sut addItem:firstItem];
-    id secondItem = [NSObject new];
+    MCBasketItem *secondItem = [[MCBasketItem alloc] init];
     [_sut addItem:secondItem];
     
     id returnedItem = [_sut itemAtRow:1];
@@ -138,5 +138,55 @@
     
     [verify(mockCell) setBasketItem:basketItem];
 }
+
+- (void)testBasketItemHasABasket
+{
+    MCBasketItem *basketItem = [[MCBasketItem alloc] init];
+    [_sut addItem:basketItem];
+    
+    MCBasketItem *returnedItem = [_sut itemAtRow:0];
+    
+    assertThat([returnedItem basket], is(equalTo(_sut)));
+}
+
+- (void)testBasketInformsDelegateWhenItemAdded
+{
+    id <MCBasketDelegate> mockDelegate = mockProtocol(@protocol(MCBasketDelegate));
+    [_sut setDelegate:mockDelegate];
+    
+    MCBasketItem *item = [[MCBasketItem alloc] init];
+    [_sut addItem:item];
+    
+    [verify(mockDelegate) basketDidUpdate];
+}
+
+- (void)testBasketInformsDelegateWhenItemRemoved
+{
+    id <MCBasketDelegate> mockDelegate = mockProtocol(@protocol(MCBasketDelegate));
+    [_sut setDelegate:mockDelegate];
+    
+    MCBasketItem *item = [[MCBasketItem alloc] init];
+    [_sut removeItem:item];
+    
+    [verify(mockDelegate) basketDidUpdate];
+}
+
+- (void)testClearingBasketRemovesAllItems
+{
+    [_sut clearItems];
+    
+    assertThatInteger([_sut numberOfItems], is(equalToInteger(0)));
+}
+
+- (void)testBasketInformsDelegateWhenItemsCleared
+{
+    id <MCBasketDelegate> mockDelegate = mockProtocol(@protocol(MCBasketDelegate));
+    [_sut setDelegate:mockDelegate];
+    
+    [_sut clearItems];
+    
+    [verify(mockDelegate) basketDidUpdate];
+}
+
 
 @end

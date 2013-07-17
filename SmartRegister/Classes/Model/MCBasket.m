@@ -12,7 +12,9 @@
 {
     [self handleItemExceptions:item];
 
+    [item setBasket:self];
     [[self items] addObject:item];
+    [_delegate basketDidUpdate];
 }
 
 - (void)removeItem:(id)item
@@ -20,6 +22,13 @@
     [self handleItemExceptions:item];
     
     [[self items] removeObject:item];
+    [_delegate basketDidUpdate];
+}
+
+- (void)clearItems
+{
+    _items = nil;
+    [_delegate basketDidUpdate];
 }
 
 - (id)itemAtRow:(NSUInteger)row
@@ -54,7 +63,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MCBasketCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BasketCell" forIndexPath:indexPath];
+    NSString *cellIdentifier = @"BasketCell";
+    
+    MCBasketCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    if (cell == nil)
+    {
+        cell = [[MCBasketCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     [cell setBasketItem:[self itemAtRow:indexPath.row]];
     
     return cell;
