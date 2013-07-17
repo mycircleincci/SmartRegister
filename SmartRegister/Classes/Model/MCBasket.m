@@ -1,6 +1,7 @@
 
 #import "MCBasket.h"
 #import "MCBasketItem.h"
+#import "MCBasketCell.h"
 
 @implementation MCBasket
 {
@@ -23,6 +24,9 @@
 
 - (id)itemAtRow:(NSUInteger)row
 {
+    if ([self numberOfItems] == 0)
+        return nil;
+    
     return [[self items] objectAtIndex:row];
 }
 
@@ -45,7 +49,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self numberOfItems];;
+    return [self numberOfItems];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MCBasketCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BasketCell" forIndexPath:indexPath];
+    [cell setBasketItem:[self itemAtRow:indexPath.row]];
+    
+    return cell;
 }
 
 #pragma mark - Helpers

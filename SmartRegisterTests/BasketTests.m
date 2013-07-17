@@ -2,12 +2,13 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "MCBasket.h"
 #import "MCBasketItem.h"
+#import "MCBasketCell.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
-//#define MOCKITO_SHORTHAND
-//#import <OCMockitoIOS/OCMockitoIOS.h>
+#define MOCKITO_SHORTHAND
+#import <OCMockitoIOS/OCMockitoIOS.h>
 
 @interface BasketTest : SenTestCase
 @end
@@ -77,7 +78,7 @@
     STAssertTrue([_sut conformsToProtocol:@protocol(UITableViewDataSource)], @"Basket should act as tableview datasource");
 }
 
-- (void)testTableViewNumberOfRowsIsBasketNumberOfItemsWHenEmpty
+- (void)testTableViewNumberOfRowsIsBasketNumberOfItemsWhenEmpty
 {
     NSUInteger tableViewNumberOfRows = [_sut tableView:nil numberOfRowsInSection:0];
     assertThatInteger(tableViewNumberOfRows, is(equalToInteger(0)));
@@ -90,6 +91,11 @@
     
     NSUInteger tableViewNumberOfRows = [_sut tableView:nil numberOfRowsInSection:0];
     assertThatInteger(tableViewNumberOfRows, is(equalToInteger(1)));
+}
+
+- (void)testItemAtRowDoesNotThrowWhenEmpty
+{
+    STAssertNoThrow([_sut itemAtRow:0], @"Empty basket should not throw when item requested");
 }
 
 - (void)testBasketReturnsCorrectItem
@@ -116,6 +122,21 @@
     [_sut addItem:basketItem];
     
     assertThatInteger([_sut totalPrice], is(equalToInteger(500)));
+}
+
+- (void)testCellProvidedWithItemWhenCreated
+{
+    MCBasketItem *basketItem = [[MCBasketItem alloc] init];
+    [_sut addItem:basketItem];
+    
+    MCBasketCell *mockCell = mock([MCBasketCell class]);
+    NSIndexPath *zeroIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    UITableView *mockTableView = mock([UITableView class]);
+    [given([mockTableView dequeueReusableCellWithIdentifier:@"BasketCell" forIndexPath:zeroIndexPath]) willReturn:mockCell];;
+
+    [_sut tableView:mockTableView cellForRowAtIndexPath:zeroIndexPath];
+    
+    [verify(mockCell) setBasketItem:basketItem];
 }
 
 @end

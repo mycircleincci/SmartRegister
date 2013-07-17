@@ -15,6 +15,8 @@
 		4F30DDF31796BBE400C3F9D6 /* MCBasketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDF21796BBE400C3F9D6 /* MCBasketItem.m */; };
 		4F30DDF41796BBE400C3F9D6 /* MCBasketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDF21796BBE400C3F9D6 /* MCBasketItem.m */; };
 		4F30DDF61796BC2A00C3F9D6 /* BasketItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDF51796BC2A00C3F9D6 /* BasketItemTests.m */; };
+		4F30DDFA1796C64B00C3F9D6 /* MCBasketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDF91796C64B00C3F9D6 /* MCBasketCell.m */; };
+		4F30DDFB1796C64B00C3F9D6 /* MCBasketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F30DDF91796C64B00C3F9D6 /* MCBasketCell.m */; };
 		4F8AB183179556E100AC5906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB182179556E100AC5906 /* UIKit.framework */; };
 		4F8AB185179556E100AC5906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB184179556E100AC5906 /* Foundation.framework */; };
 		4F8AB187179556E100AC5906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8AB186179556E100AC5906 /* CoreGraphics.framework */; };
@@ -51,6 +53,8 @@
 		4F30DDF11796BBE400C3F9D6 /* MCBasketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCBasketItem.h; path = Model/MCBasketItem.h; sourceTree = "<group>"; };
 		4F30DDF21796BBE400C3F9D6 /* MCBasketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCBasketItem.m; path = Model/MCBasketItem.m; sourceTree = "<group>"; };
 		4F30DDF51796BC2A00C3F9D6 /* BasketItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketItemTests.m; sourceTree = "<group>"; };
+		4F30DDF81796C64B00C3F9D6 /* MCBasketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCBasketCell.h; path = Cells/MCBasketCell.h; sourceTree = "<group>"; };
+		4F30DDF91796C64B00C3F9D6 /* MCBasketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCBasketCell.m; path = Cells/MCBasketCell.m; sourceTree = "<group>"; };
 		4F8AB17F179556E100AC5906 /* SmartRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8AB182179556E100AC5906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4F8AB184179556E100AC5906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +112,15 @@
 				4F30DDF21796BBE400C3F9D6 /* MCBasketItem.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4F30DDF71796C63400C3F9D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F30DDF81796C64B00C3F9D6 /* MCBasketCell.h */,
+				4F30DDF91796C64B00C3F9D6 /* MCBasketCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		4F8AB176179556E100AC5906 = {
@@ -185,6 +198,7 @@
 		4F8AB1BF179557DF00AC5906 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4F30DDF71796C63400C3F9D6 /* Cells */,
 				4F30DDEC1796A43600C3F9D6 /* Model */,
 				4F8AB1C0179557DF00AC5906 /* MCAppDelegate.h */,
 				4F8AB1C1179557DF00AC5906 /* MCAppDelegate.m */,
@@ -354,6 +368,7 @@
 				4F8AB1CD1795582500AC5906 /* main.m in Sources */,
 				4F30DDEF1796A4A300C3F9D6 /* MCBasket.m in Sources */,
 				4F30DDF31796BBE400C3F9D6 /* MCBasketItem.m in Sources */,
+				4F30DDFA1796C64B00C3F9D6 /* MCBasketCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +380,7 @@
 				4F30DDF01796A4A300C3F9D6 /* MCBasket.m in Sources */,
 				4F30DDF41796BBE400C3F9D6 /* MCBasketItem.m in Sources */,
 				4F30DDF61796BC2A00C3F9D6 /* BasketItemTests.m in Sources */,
+				4F30DDFB1796C64B00C3F9D6 /* MCBasketCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
