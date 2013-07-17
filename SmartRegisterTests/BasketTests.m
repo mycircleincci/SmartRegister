@@ -85,4 +85,9 @@
     assertThatInteger(tableViewNumberOfRows, is(equalToInteger(1)));
 }
 
+- (void)testBasketReturnsItem
+{
+    id item
+}
+
 @end
